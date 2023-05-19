@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="text-indigo-600">
+    <div class="text-green-600">
         portfolio
     </div>
 </template>
