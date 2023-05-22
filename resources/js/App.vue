@@ -16,8 +16,9 @@ export default {
 	mounted() {
 		feather.replace();
 		let theme = localStorage.getItem('theme');
-		if (theme == '') {
+		if (!theme) {
 			this.appTheme = 'dark';
+			localStorage.setItem('theme', 'dark');
 		}
 	},
 	updated() {

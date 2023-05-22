@@ -38,18 +38,18 @@ export default {
 						class="modal-wrapper flex items-center z-30"
 					>
 						<div
-							class="modal max-w-md mx-5 md:max-w-xl bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-lg relative"
+							class="modal h-5/6 overflow-auto max-w-md mx-5 md:max-w-xl bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-lg relative"
 						>
 							<div
-								class="modal-header flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark"
+								class="modal-header  sticky -top-1 bg-indigo-900 flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark"
 							>
 								<h5
-									class="text-primary-dark dark:text-primary-light text-xl"
+									class="text-white text-xl"
 								>
-									What project are you looking for?
+									How may I best serve your business?
 								</h5>
 								<button
-									class="px-4 text-primary-dark dark:text-primary-light"
+									class="px-4 text-white"
 									@click="showModal()"
 								>
 									<i data-feather="x"></i>
@@ -106,16 +106,7 @@ export default {
 									</div>
 								</form>
 							</div>
-							<div
-								class="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right"
-							>
-								<Button
-									title="Close"
-									class="px-4 sm:px-6 py-2 bg-gray-600 text-primary-light hover:bg-ternary-dark dark:bg-gray-200 dark:text-secondary-dark dark:hover:bg-primary-light rounded-md focus:ring-1 focus:ring-indigo-900 duration-500"
-									@click="showModal()"
-									aria-label="Close Modal"
-								/>
-							</div>
+						
 						</div>
 					</div>
 				</transition>
