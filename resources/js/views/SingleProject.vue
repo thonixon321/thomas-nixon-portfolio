@@ -24,17 +24,17 @@ export default {
 				{
 					id: 1,
 					title: 'Kabul Project Management UI',
-					img: import('../assets/images/ui-project-1.jpg'),
+					img: '../assets/images/ui-project-1.jpg',
 				},
 				{
 					id: 2,
 					title: 'Kabul Project Management UI',
-					img: import('../assets/images/web-project-2.jpg'),
+					img: '../assets/images/web-project-2.jpg',
 				},
 				{
 					id: 3,
 					title: 'Kabul Project Management UI',
-					img: import('../assets/images/mobile-project-2.jpg'),
+					img: '../assets/images/mobile-project-2.jpg',
 				},
 			],
 			projectInfo: {
@@ -106,13 +106,13 @@ export default {
 						id: 1,
 						name: 'Twitter',
 						icon: 'twitter',
-						url: 'https://twitter.com/realThomas Nixon',
+						url: 'https://twitter.com/',
 					},
 					{
 						id: 2,
 						name: 'Instagram',
 						icon: 'instagram',
-						url: 'https://instagram.com/realThomas Nixon',
+						url: 'https://instagram.com/',
 					},
 					{
 						id: 3,
@@ -130,7 +130,7 @@ export default {
 						id: 5,
 						name: 'Youtube',
 						icon: 'youtube',
-						url: 'https://www.youtube.com/c/Thomas NixonStudio',
+						url: 'https://www.youtube.com/',
 					},
 				],
 			},
@@ -140,22 +140,22 @@ export default {
 					{
 						id: 1,
 						title: 'Mobile UI',
-						img: require('@/assets/images/mobile-project-1.jpg'),
+						img: '../assets/images/mobile-project-1.jpg',
 					},
 					{
 						id: 2,
 						title: 'Web Application',
-						img: require('@/assets/images/web-project-1.jpg'),
+						img: '../assets/images/web-project-1.jpg',
 					},
 					{
 						id: 3,
 						title: 'UI Design',
-						img: require('@/assets/images/ui-project-2.jpg'),
+						img: '../assets/images/ui-project-2.jpg',
 					},
 					{
 						id: 4,
 						title: 'Kabul Mobile App UI',
-						img: require('@/assets/images/mobile-project-2.jpg'),
+						img: '../assets/images/mobile-project-2.jpg',
 					},
 				],
 			},

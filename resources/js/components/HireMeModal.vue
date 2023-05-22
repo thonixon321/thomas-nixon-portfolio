@@ -38,7 +38,7 @@ export default {
 						class="modal-wrapper flex items-center z-30"
 					>
 						<div
-							class="modal h-5/6 overflow-auto max-w-md mx-5 md:max-w-xl bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-lg relative"
+							class="modal h-[90%] overflow-auto max-w-md mx-5 md:max-w-xl bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-lg relative"
 						>
 							<div
 								class="modal-header  sticky -top-1 bg-indigo-900 flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark"
@@ -46,7 +46,7 @@ export default {
 								<h5
 									class="text-white text-xl"
 								>
-									How may I best serve your business?
+									How may I serve your business?
 								</h5>
 								<button
 									class="px-4 text-white"
@@ -55,7 +55,7 @@ export default {
 									<i data-feather="x"></i>
 								</button>
 							</div>
-							<div class="modal-body p-5 w-full h-full">
+							<div class="modal-body p-2 w-full h-full">
 								<form class="max-w-xl m-4 text-left">
 									<FormInput
 										label="Full Name"
@@ -99,7 +99,7 @@ export default {
 									<div class="mt-7 pb-4 sm:pb-1">
 										<Button
 											title="Send Request"
-											class="px-4 sm:px-6 py-2 sm:py-2.5 text-white bg-indigo-500 hover:bg-indigo-600 rounded-md focus:ring-1 focus:ring-indigo-900 duration-500"
+											class="mb-4 px-4 sm:px-6 py-2 sm:py-2.5 text-white bg-indigo-500 hover:bg-indigo-600 rounded-md focus:ring-1 focus:ring-indigo-900 duration-500"
 											type="submit"
 											aria-label="Submit Request"
 										/>

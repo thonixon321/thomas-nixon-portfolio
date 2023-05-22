@@ -10,7 +10,7 @@ export default {
 	},
 	data: () => {
 		return {
-			appTheme: localStorage.getItem('theme'),
+			appTheme: '',
 		};
 	},
 	mounted() {
@@ -18,6 +18,13 @@ export default {
 		let theme = localStorage.getItem('theme');
 		if (!theme) {
 			this.appTheme = 'dark';
+		} else {
+			this.appTheme = theme;
+		}
+	},
+	created() {
+		let theme = localStorage.getItem('theme');
+		if (!theme) {
 			localStorage.setItem('theme', 'dark');
 		}
 	},
