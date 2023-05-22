@@ -1,14 +1,26 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
 import './bootstrap';
-import '../css/app.css';
 import { createApp } from 'vue';
-import App from "./App.vue";
+import App from './App.vue';
+import router from './router';
+import './assets/css/app.css';
+import BackToTop from 'vue-backtotop';
+import feather from "feather-icons";
 
-const app = createApp(App);
+feather.replace();
 
-app.mount('#app');
+createApp(App)
+	.use(router)
+	.use(BackToTop)
+	.mount('#app');
+
+const appTheme = localStorage.getItem('theme');
+
+// Check what is the active theme and change theme when user clicks on the theme button in header.
+if (
+	appTheme === 'dark' &&
+	document.querySelector('body').classList.contains('app-theme')
+) {
+	document.querySelector('body').classList.add('bg-primary-dark');
+} else {
+	document.querySelector('body').classList.add('bg-secondary-light');
+}
