@@ -25,18 +25,13 @@ export default {
 				},
 				{
 					id: 2,
-					value: 'mobile',
-					name: 'Mobile Application',
+					value: 'desktop',
+					name: 'Desktop Application',
 				},
 				{
 					id: 3,
-					value: 'ui-ux',
-					name: 'UI/UX Design',
-				},
-				{
-					id: 4,
-					value: 'branding',
-					name: 'Branding & Anim',
+					value: 'apis',
+					name: 'APIs',
 				},
 			],
 		};

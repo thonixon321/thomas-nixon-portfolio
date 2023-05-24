@@ -6,19 +6,21 @@ const projects = [
 		id: 1,
 		title: 'Touch-board Admin Tool',
 		category: 'Web Application',
-		img: '../assets/images/touchboard-admin-home.png',
+		img: '../assets/images/ui-project-1.jpg',
+		route: 'touchboard-admin'
 	},
 	{
 		id: 2,
 		title: 'Touch-board Desktop App',
 		category: 'Desktop Application',
 		img: '../assets/images/touchboard-desktop-launchpad.png',
+		route: 'touchboard-desktop'
 	},
 	{
 		id: 3,
 		title: 'CTV Admin Tool',
 		category: 'Web Application',
-		img: '../assets/images/ctv-config-home.png',
+		img: '../assets/images/web-project-1.jpg',
 	},
 	{
 		id: 4,

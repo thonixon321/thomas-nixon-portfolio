@@ -49,6 +49,34 @@ const routes = [
 		},
 	},
 	{
+		path: '/projects/touchboard-admin',
+		name: 'Touch-board Admin Tool',
+		// route level code-splitting
+		// this generates a separate chunk (projects.[hash].js) for this route
+		// which is lazy-loaded when the route is visited.
+		component: () =>
+			import(
+				/* webpackChunkName: "projects" */ '../views/projects/TouchboardAdmin.vue'
+			),
+		meta: {
+			title: 'Thomas Nixon - Touch-board Admin Tool',
+		},
+	},
+	{
+		path: '/projects/touchboard-desktop',
+		name: 'Touch-board Desktop App',
+		// route level code-splitting
+		// this generates a separate chunk (projects.[hash].js) for this route
+		// which is lazy-loaded when the route is visited.
+		component: () =>
+			import(
+				/* webpackChunkName: "projects" */ '../views/projects/TouchboardDesktop.vue'
+			),
+		meta: {
+			title: 'Thomas Nixon - Touch-board Desktop App',
+		},
+	},
+	{
 		path: '/contact',
 		name: 'Contact',
 		// route level code-splitting
