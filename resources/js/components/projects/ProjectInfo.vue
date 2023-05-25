@@ -17,6 +17,26 @@ export default {
 	<div class="block sm:flex gap-0 sm:gap-10 mt-14">
 		<!-- Single project left section details -->
 		<div class="w-full sm:w-1/3 text-left">
+			<div v-if="projectInfo.siteLocation" class="mb-7">
+				<p
+					class="font-general-medium text-2xl text-secondary-dark dark:text-secondary-light mb-2"
+				>
+					See It Live At
+				</p>
+				<ul class="leading-loose">
+					<li
+						class="font-general-regular text-ternary-dark dark:text-ternary-light"
+					>
+						<a
+							:href="projectInfo.siteLocation"
+							target="_blank"
+							class='hover:underline cursor-pointer'
+							aria-label="Project Website"
+							>{{ projectInfo.siteLocation }}</a
+						>
+					</li>
+				</ul>
+			</div>
 			<!-- Single project client details -->
 			<div class="mb-7">
 				<p
@@ -32,7 +52,7 @@ export default {
 					>
 						<span>{{ info.title }}: </span>
 						<a
-							href="#"
+							:href="info.title == 'Website' ? info.details : '#'"
 							:class="
 								info.title == 'Website' || info.title == 'Phone'
 									? 'hover:underline cursor-pointer'

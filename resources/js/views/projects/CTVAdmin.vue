@@ -16,25 +16,25 @@ export default {
 	data: () => {
 		return {
 			singleProjectHeader: {
-				singleProjectTitle: 'Touch-board Desktop App',
-				singleProjectDate: 'July 15, 2022',
-				singleProjectTag: 'Desktop Application',
+				singleProjectTitle: 'CTV Admin Tool',
+				singleProjectDate: 'April 3, 2023',
+				singleProjectTag: 'Web Application',
 			},
 			projectImages: [
 				{
 					id: 1,
-					title: 'Touchboard Desktop App',
-					img: '../assets/images/touchboard-before-after.png',
+					title: 'CTV Admin Tool',
+					img: '../assets/images/private.jpg',
 				},
 				{
 					id: 2,
-					title: 'Touchboard Desktop App',
-					img: '../assets/images/touchboard-graph.png',
+					title: 'CTV Admin Tool',
+					img: '../assets/images/private.jpg',
 				},
 				{
 					id: 3,
-					title: 'Touchboard Desktop App',
-					img: '../assets/images/touchboard-countdown.png',
+					title: 'CTV Admin Tool',
+					img: '../assets/images/private.jpg',
 				},
 			],
 			projectInfo: {
@@ -63,18 +63,20 @@ export default {
 				],
 				objectivesHeading: 'Objective',
 				objectivesDetails:
-					'Build a desktop app that can be downloaded onto news station computers and used in on-air presentations via Touch-board to show Election results, School Closings, Local Gas Prices, Sports Scores, interactive slideshows and images, etc.',
+					'Create an administration tool that will build a feed and will allow news stations to configure their content to be shown in a Connected TV (CTV) application.',
 				technologies: [
 					{
 						title: 'Tools & Technologies',
 						techs: [
 							'HTML',
 							'CSS',
+                            'TailwindCSS',
 							'JavaScript',
-							'Vue.js',
-                            'Electron.js',
-							'Interact.js',
-                            'D3.js'
+							'Alpine.js',
+                            'PHP',
+							'Laravel',
+                            'Livewire',
+                            'MySQL'
 						],
 					},
 				],
@@ -83,22 +85,22 @@ export default {
 					{
 						id: 1,
 						details:
-							"Thirteen unique and interactive touch-board applications rolled into one professional-looking easy-to-use desktop app that will be used in newscasts and shown to thousands of viewers? No problem!",
+							"It was asked that this CTV administration tool be built in a way that would be more friendly to PHP developers. I was the only developer on the team that had experience with both PHP and Vue.js, and so the project managers thought it would be good to migrate toward a tech stack that accomodated everyone on the digital development team, and most everyone had at least some experience with PHP. Anyway, that is how the TALL stack (TailwindCSS, Alpine.js, Laravel, Livewire) structure for this project originated, and I was happy to be one of the co-developers on this project. It was a great way to get more familiar with a new tech stack.",
 					},
 					{
 						id: 2,
 						details:
-							"The first project that Gray TV handed me was indeed a large one, and it was a lot of fun too. This would be my first time getting to use Electron.js to build a desktop application that could be auto-updated and deployed in an instant, while using the tools I was already very familiar with: HTML, CSS, and Vue.js. ",
+							"This administration tool had to have many different dynamic forms for the user to fill out. Certain inputs would trigger different types of fields to appear and others to disappear. Some form settings were specific to a news station, and others were more global and applied to all stations. Forms included livestream content, feature sections, pages, page layout, and all sorts of different page content. The ultimate goal was to allow the user to construct a JSON feed for their news station, and then this feed would be pulled in from a different app which would build out the CTV app that could go into devices (like TVs from Roku, Apple, Amazon, Android, etc.).",
 					},
 					{
 						id: 3,
 						details:
-							"These frontend tools that I'd get to use would help me build some pretty awesome apps with surprisingly fun interactivity. Want to show some fun poll results? You got it. Want to show results in a graph instead? I'll give you six different types of graphs to use. How about local sports scores? No problem, you can show as many as you want, any team, any sport. Text Conversations? Yep. School Closings? Of course. Election results? Oh yeah. Local Gas Prices? Yes. A board I can fill with images, pinch-zoom those images, rotate and do whatever I want with them? Sure! Can I use a draw tool to draw all over the apps as well? Done! Okay the list goes on, and I don't want to make the reading here too long, but hopefully you get the point. There's a lot of functionality in this project!",
+							"My role in this project would involve full-stack development. I was in charge of building all of the frontend, including complex validation methods for certain form processes, setting up the database migrations, and making sure communications to the database from the frontend were working as expected. The other developer that helped in this project was focused on retrieving data stored in the database when a publish button was clicked, and they would use this data to construct a JSON feed that could be hosted at a site. I also helped with a little bit of this feed construction as well.",
 					},
 					{
 						id: 4,
 						details:
-							"I was the sole developer on this project, and it gave me some awesome experience in developing with a touch/interactive focused mindset. Animations, draggability, zooming, swiping, rotating, it's all here in these apps. These apps are also connected to restful API endpoints that are fed from another project I developed called the Touch-board Admin Tool (for more info on that see in projects).",
+							"This project's challenge gave me more great experience with form building, form validation, the Laravel TALL stack, and building config feeds.",
 					},
 				],
 				socialSharingsHeading: 'Share This',

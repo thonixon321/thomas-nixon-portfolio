@@ -77,6 +77,34 @@ const routes = [
 		},
 	},
 	{
+		path: '/projects/ctv-admin',
+		name: 'CTV Admin Tool',
+		// route level code-splitting
+		// this generates a separate chunk (projects.[hash].js) for this route
+		// which is lazy-loaded when the route is visited.
+		component: () =>
+			import(
+				/* webpackChunkName: "projects" */ '../views/projects/CTVAdmin.vue'
+			),
+		meta: {
+			title: 'Thomas Nixon - CTV Admin Tool',
+		},
+	},
+	{
+		path: '/projects/financial-calculators',
+		name: 'Financial Calculators',
+		// route level code-splitting
+		// this generates a separate chunk (projects.[hash].js) for this route
+		// which is lazy-loaded when the route is visited.
+		component: () =>
+			import(
+				/* webpackChunkName: "projects" */ '../views/projects/FinancialCalculators.vue'
+			),
+		meta: {
+			title: 'Thomas Nixon - Financial Calculators',
+		},
+	},
+	{
 		path: '/contact',
 		name: 'Contact',
 		// route level code-splitting

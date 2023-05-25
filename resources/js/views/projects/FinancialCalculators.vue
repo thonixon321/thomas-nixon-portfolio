@@ -16,54 +16,55 @@ export default {
 	data: () => {
 		return {
 			singleProjectHeader: {
-				singleProjectTitle: 'Touch-board Desktop App',
-				singleProjectDate: 'July 15, 2022',
-				singleProjectTag: 'Desktop Application',
+				singleProjectTitle: 'Financial Calculators',
+				singleProjectDate: 'October 10, 2018',
+				singleProjectTag: 'Web Application',
 			},
 			projectImages: [
 				{
 					id: 1,
-					title: 'Touchboard Desktop App',
-					img: '../assets/images/touchboard-before-after.png',
+					title: 'Financial Calculators',
+					img: '../assets/images/credit-card-calculator.png',
 				},
 				{
 					id: 2,
-					title: 'Touchboard Desktop App',
-					img: '../assets/images/touchboard-graph.png',
+					title: 'Financial Calculators',
+					img: '../assets/images/finCalc-budget.png',
 				},
 				{
 					id: 3,
-					title: 'Touchboard Desktop App',
-					img: '../assets/images/touchboard-countdown.png',
+					title: 'Financial Calculators',
+					img: '../assets/images/finCalc-loan.png',
 				},
 			],
 			projectInfo: {
+                siteLocation: 'https://www.myfirstccu.org/page/calculators',
 				clientHeading: 'About Client',
 				companyInfos: [
 					{
 						id: 1,
 						title: 'Name',
-						details: 'Gray TV',
+						details: 'First Community Credit Union',
 					},
 					{
 						id: 2,
 						title: 'Services',
-						details: 'Television Broadcasting',
+						details: 'Banking and Loans',
 					},
 					{
 						id: 3,
 						title: 'Website',
-						details: 'https://gray.tv',
+						details: 'https://www.myfirstccu.org',
 					},
 					{
 						id: 4,
 						title: 'Phone',
-						details: '888-835-2869',
+						details: '855-328-2441',
 					},
 				],
 				objectivesHeading: 'Objective',
 				objectivesDetails:
-					'Build a desktop app that can be downloaded onto news station computers and used in on-air presentations via Touch-board to show Election results, School Closings, Local Gas Prices, Sports Scores, interactive slideshows and images, etc.',
+					'Build twelve different financial apps that can be used to help customers pay off debts, plan for retirement, calculate all sorts of loans, plan a budget, etc.',
 				technologies: [
 					{
 						title: 'Tools & Technologies',
@@ -71,9 +72,7 @@ export default {
 							'HTML',
 							'CSS',
 							'JavaScript',
-							'Vue.js',
-                            'Electron.js',
-							'Interact.js',
+							'jQuery',
                             'D3.js'
 						],
 					},
@@ -83,22 +82,22 @@ export default {
 					{
 						id: 1,
 						details:
-							"Thirteen unique and interactive touch-board applications rolled into one professional-looking easy-to-use desktop app that will be used in newscasts and shown to thousands of viewers? No problem!",
+							"One of my very first projects at the first company I began software development for would end up being one of the biggest projects I have worked on to date, and one of the best learning experiences to date as well. Being tasked with the development of twelve different financial calculators, most of which were highly complex in nature, was a daunting yet exciting task. Ultimately it really put my problem solving skills to the test and cemented my passion for building apps. Honestly each calculator that I was able to make functional gave me a great feeling of pride and confidence in my coding abilities. I've carried that feeling with me to many projects since.",
 					},
 					{
 						id: 2,
 						details:
-							"The first project that Gray TV handed me was indeed a large one, and it was a lot of fun too. This would be my first time getting to use Electron.js to build a desktop application that could be auto-updated and deployed in an instant, while using the tools I was already very familiar with: HTML, CSS, and Vue.js. ",
+							"This administration tool had to have many different dynamic forms for the user to fill out. Certain inputs would trigger different types of fields to appear and others to disappear. Some form settings were specific to a news station, and others were more global and applied to all stations. Forms included livestream content, feature sections, pages, page layout, and all sorts of different page content. The ultimate goal was to allow the user to construct a JSON feed for their news station, and then this feed would be pulled in from a different app which would build out the CTV app that could go into devices (like TVs from Roku, Apple, Amazon, Android, etc.).",
 					},
 					{
 						id: 3,
 						details:
-							"These frontend tools that I'd get to use would help me build some pretty awesome apps with surprisingly fun interactivity. Want to show some fun poll results? You got it. Want to show results in a graph instead? I'll give you six different types of graphs to use. How about local sports scores? No problem, you can show as many as you want, any team, any sport. Text Conversations? Yep. School Closings? Of course. Election results? Oh yeah. Local Gas Prices? Yes. A board I can fill with images, pinch-zoom those images, rotate and do whatever I want with them? Sure! Can I use a draw tool to draw all over the apps as well? Done! Okay the list goes on, and I don't want to make the reading here too long, but hopefully you get the point. There's a lot of functionality in this project!",
+							"My role in this project would end up being full-stack in nature. I was in charge of building all of the frontend, including complex validation methods for certain form processes, setting up the database migrations, and making sure communications to the database from the frontend were working as expected. The other developer that helped in this project was focused on retrieving data stored in the database when a publish button was clicked, and they would use this data to construct a JSON feed that could be hosted at a site. I also helped with a little bit of this feed construction as well.",
 					},
 					{
 						id: 4,
 						details:
-							"I was the sole developer on this project, and it gave me some awesome experience in developing with a touch/interactive focused mindset. Animations, draggability, zooming, swiping, rotating, it's all here in these apps. These apps are also connected to restful API endpoints that are fed from another project I developed called the Touch-board Admin Tool (for more info on that see in projects).",
+							"This project's challenge gave me more great experience with form building, form validation, the Laravel TALL stack, and building config feeds.",
 					},
 				],
 				socialSharingsHeading: 'Share This',

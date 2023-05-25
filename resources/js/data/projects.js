@@ -21,12 +21,14 @@ const projects = [
 		title: 'CTV Admin Tool',
 		category: 'Web Application',
 		img: '../assets/images/web-project-1.jpg',
+		route: 'ctv-admin'
 	},
 	{
 		id: 4,
 		title: 'Financial Calculators',
 		category: 'Web Application',
 		img: '../assets/images/financial-calculators.png',
+		route: 'financial-calculators'
 	},
 	{
 		id: 5,
