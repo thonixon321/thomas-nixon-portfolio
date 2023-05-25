@@ -16,32 +16,31 @@ export default {
 	data: () => {
 		return {
 			singleProjectHeader: {
-				singleProjectTitle: 'Financial Calculators',
-				singleProjectDate: 'October 10, 2018',
-				singleProjectTag: 'Web Application',
+				singleProjectTitle: 'Scholarships API',
+				singleProjectDate: 'September 16, 2019',
+				singleProjectTag: 'APIs',
 			},
 			projectImages: [
 				{
 					id: 1,
-					title: 'Financial Calculators',
-					img: '../assets/images/credit-card-calculator.png',
+					title: 'Touchboard Admin Tool',
+					img: '../assets/images/private.jpg',
 				},
 				{
 					id: 2,
-					title: 'Financial Calculators',
-					img: '../assets/images/finCalc-budget.png',
+					title: 'Touchboard Admin Tool',
+					img: '../assets/images/private.jpg',
 				},
 				{
 					id: 3,
-					title: 'Financial Calculators',
-					img: '../assets/images/finCalc-loan.png',
+					title: 'Touchboard Admin Tool',
+					img: '../assets/images/private.jpg',
 				},
 			],
 			projectInfo: {
-                siteLocation: 'https://www.myfirstccu.org/page/calculators',
 				clientHeading: 'About Client',
 				companyInfos: [
-					{
+                    {
 						id: 1,
 						title: 'Name',
 						details: 'First Community Credit Union',
@@ -64,16 +63,14 @@ export default {
 				],
 				objectivesHeading: 'Objective',
 				objectivesDetails:
-					'Build twelve different financial apps that can be used to help customers pay off debts, plan for retirement, calculate all sorts of loans, plan a budget, etc.',
+					'Setup restful API endpoints that can have total control over scholarship application data, and allow these endpoints to be easily accessed in a pre-existing application structure - through AJAX calls from a Vue.js frontend.',
 				technologies: [
 					{
 						title: 'Tools & Technologies',
 						techs: [
-							'HTML',
-							'CSS',
-							'JavaScript',
-							'jQuery',
-                            'D3.js'
+                            'PHP',
+							'Laravel',
+                            'MySQL',
 						],
 					},
 				],
@@ -82,22 +79,22 @@ export default {
 					{
 						id: 1,
 						details:
-							"One of my very first projects in my software development career would end up being one of the biggest projects I have worked on to date, and one of the best learning experiences to date as well. Being tasked with the development of twelve different financial calculators, most of which were highly complex in nature, was no doubt a daunting task, but it was also an exciting opportunity. Ultimately it really put my problem solving skills to the test and helped cement my passion for building apps. Honestly each calculator that I was able to make functional gave me a great feeling of pride and confidence in my coding abilities. I've carried that feeling with me to many projects since.",
+							"This would be one of the many APIs that I built for First Community Credit Union, and one that I like to feature prominently since it felt very rewarding to build something that would allow students to receive well deserved aid to their collegiate studies.",
 					},
 					{
 						id: 2,
 						details:
-							"To those who may not know what a financial calculator is, let me try to explain. These are not your average calculators. These are aimed at a specific goals, for instance the auto loan calculator can be used to find out a monthly payment given a price, term-length, interest rate and any other potential factors such as rebates, additional payments, trade allowances, etc. The goal of a financial calculator is usually aimed at helping a customer plan their money in a smart way, and there are so many things to consider when making these plans. Hence, so many types of calculators with so many different formulas used to calculate dozens of potential inputs.",
+							"With this project, I was designated as the sole backend developer that would build endpoints in the Laravel/Lumen framework for the frontend team to call upon for getting and manipulating scholarship data. A frontend was already in place, and an old database structure with old php code querying it was also in place. So the challenge really consisted of taking a pre-existing backend structure, extracting the most necessary parts, adding any new features requested of the new application, and optimizing it with a more modern framework like Laravel.",
 					},
 					{
 						id: 3,
 						details:
-							"So much went into making these calculators not only functional, but also intuitive and informative to a user. Not only can the user clearly see how their inputs affect the graph of a payment schedule, they can also go into a whole different information page which will give them a printable version of the graphs along with payment details and tables to further clarify each part of a schedule.",
+							"Identifying the needed database fields was simple enough since I was in good communication with the credit union's scholarship committee and their desires for what they needed from a scholarship applicant. Laying out the database table relations was a little more complex since there was a need to incorporate an ability to run jobs that would check for secure file uploads from applicants and change applicant statuses depending on the result of the security check. Relations between student info and scholarship application status needed to be easily understandable and adjustable.",
 					},
 					{
 						id: 4,
 						details:
-							"Each calculator is unique as it uses different formulas to calculate different things, and many different types of graphs and data visualizations are used throughout these calculators. This project is live and available for anyone to use, and I encourage you to check it out!",
+							"This project gave me a great understanding of how to communicate with another team of developers and document how to use what I was building. It was important that the frontend team knew how to access my api endpoints so that they could easily understand how to develop the new and improved version of the scholarship application process, and this understanding led to a great app that was able to help many students.",
 					},
 				],
 				socialSharingsHeading: 'Share This',

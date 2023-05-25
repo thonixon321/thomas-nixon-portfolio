@@ -32,9 +32,10 @@ const projects = [
 	},
 	{
 		id: 5,
-		title: 'Lumen Micro-Services',
+		title: 'Scholarships API',
 		category: 'APIs',
 		img: '../assets/images/lumen-micro-services.jpg',
+		route: 'scholarships-api'
 	},
 	{
 		id: 6,
