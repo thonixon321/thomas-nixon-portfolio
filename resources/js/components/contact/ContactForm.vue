@@ -2,7 +2,33 @@
 import Button from '../reusable/Button.vue';
 import FormInput from '../reusable/FormInput.vue';
 import FormTextarea from '../reusable/FormTextarea.vue';
-export default { components: { Button, FormInput, FormTextarea } };
+import axios from 'axios';
+
+export default {
+	data() {
+		return {
+			form: {
+				name: '',
+				email: '',
+				subject: '',
+				message: ''
+			}
+		}
+	},
+	methods: {
+		submitEmail() {
+			console.log(this.form)
+		axios.post('/api/send-mail', this.form)
+		.then(function (response) {
+			console.log(response);
+		})
+		.catch(function (error) {
+			console.log(error);
+		});
+		}
+	},
+	components: { Button, FormInput, FormTextarea } 
+};
 </script>
 
 <template>
@@ -15,15 +41,17 @@ export default { components: { Button, FormInput, FormTextarea } };
 			>
 				Contact Form
 			</p>
-			<form action="#" class="font-general-regular space-y-7">
-				<FormInput label="Full Name" inputIdentifier="name" />
+			<form @submit.prevent="submitEmail" class="font-general-regular space-y-7">
+				<FormInput v-model="form.name" label="Full Name" inputIdentifier="name" required />
 				<FormInput
+					v-model="form.email"
 					label="Email"
 					inputIdentifier="email"
 					inputType="email"
+					required
 				/>
-				<FormInput label="Subject" inputIdentifier="subject" />
-				<FormTextarea label="Message" textareaIdentifier="message" />
+				<FormInput v-model="form.subject" label="Subject" inputIdentifier="subject" required />
+				<FormTextarea v-model="form.message" label="Message" textareaIdentifier="message" required />
 
 				<div>
 					<Button

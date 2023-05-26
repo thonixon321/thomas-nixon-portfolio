@@ -29,7 +29,7 @@ export default {
 				{
 					id: 2,
 					title: 'Touchboard Desktop App',
-					img: '../assets/images/touchboard-graph.png',
+					img: '../assets/images/touchboard-scores.png',
 				},
 				{
 					id: 3,
@@ -98,7 +98,7 @@ export default {
 					{
 						id: 4,
 						details:
-							"I was the sole developer on this project, and it gave me some awesome experience in developing with a touch/interactive focused mindset. Animations, draggability, zooming, swiping, rotating, it's all here in these apps. These apps are also connected to restful API endpoints that are fed from another project I developed called the Touch-board Admin Tool (for more info on that see in projects).",
+							"I was the sole developer on this project, and it gave me some awesome experience in developing with a touch/interactive focused mindset. Animations, draggability, zooming, swiping, rotating, it's all here in these apps. These apps are also connected to RESTful API endpoints that are fed from another project I developed called the Touch-board Admin Tool (for more info on that see in projects).",
 					},
 				],
 				socialSharingsHeading: 'Share This',

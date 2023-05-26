@@ -3,11 +3,32 @@ import feather from 'feather-icons';
 import Button from './reusable/Button.vue';
 import FormInput from './reusable/FormInput.vue';
 import FormTextarea from './reusable/FormTextarea.vue';
+import axios from 'axios';
+
 export default {
 	props: ['showModal', 'modal', 'categories'],
 	components: { Button, FormInput, FormTextarea },
 	data() {
-		return {};
+		return {
+			form: {
+				name: '',
+				email: '',
+				subject: '',
+				message: ''
+			}
+		}
+	},
+	methods: {
+		submitEmail() {
+			console.log(this.form)
+			axios.post('/api/send-mail', this.form)
+			.then(function (response) {
+				console.log(response);
+			})
+			.catch(function (error) {
+				console.log(error);
+			});
+		}
 	},
 	mounted() {
 		feather.replace();
@@ -15,7 +36,6 @@ export default {
 	updated() {
 		feather.replace();
 	},
-	methods: {},
 };
 </script>
 
@@ -56,16 +76,20 @@ export default {
 								</button>
 							</div>
 							<div class="modal-body p-2 w-full h-full">
-								<form class="max-w-xl m-4 text-left">
+								<form @submit.prevent="submitEmail" class="max-w-xl m-4 text-left">
 									<FormInput
 										label="Full Name"
 										inputIdentifier="name"
 										class="mb-2"
+										v-model="form.name"
+										required
 									/>
 									<FormInput
 										label="Email"
 										inputIdentifier="email"
 										inputType="email"
+										v-model="form.email"
+										required
 									/>
 
 									<div class="mt-6 mb-4">
@@ -80,6 +104,7 @@ export default {
 											name="project"
 											required=""
 											aria-label="Project Category"
+											v-model="form.subject"
 										>
 											<option
 												v-for="category in categories"
@@ -94,6 +119,8 @@ export default {
 									<FormTextarea
 										label="Details"
 										textareaIdentifier="details"
+										v-model="form.message"
+										required
 									/>
 
 									<div class="mt-7 pb-4 sm:pb-1">

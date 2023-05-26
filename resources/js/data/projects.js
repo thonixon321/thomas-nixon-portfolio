@@ -42,6 +42,7 @@ const projects = [
 		title: 'Payroll App',
 		category: 'Web Application',
 		img: '../assets/images/payroll-app.jpg',
+		route: 'payroll'
 	},
 ];
 

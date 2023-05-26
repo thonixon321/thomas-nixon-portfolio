@@ -16,31 +16,31 @@ export default {
 	data: () => {
 		return {
 			singleProjectHeader: {
-				singleProjectTitle: 'Scholarships API',
-				singleProjectDate: 'March 16, 2021',
-				singleProjectTag: 'APIs',
+				singleProjectTitle: 'Payroll',
+				singleProjectDate: 'September 16, 2019',
+				singleProjectTag: 'Web Application',
 			},
 			projectImages: [
 				{
 					id: 1,
-					title: 'Touchboard Admin Tool',
+					title: 'Payroll',
 					img: '../assets/images/private.jpg',
 				},
 				{
 					id: 2,
-					title: 'Touchboard Admin Tool',
+					title: 'Payroll',
 					img: '../assets/images/private.jpg',
 				},
 				{
 					id: 3,
-					title: 'Touchboard Admin Tool',
+					title: 'Payroll',
 					img: '../assets/images/private.jpg',
 				},
 			],
 			projectInfo: {
 				clientHeading: 'About Client',
 				companyInfos: [
-                    {
+					{
 						id: 1,
 						title: 'Name',
 						details: 'First Community Credit Union',
@@ -63,14 +63,15 @@ export default {
 				],
 				objectivesHeading: 'Objective',
 				objectivesDetails:
-					'Setup RESTful API endpoints that can have total control over scholarship application data, and allow these endpoints to be easily accessed in a pre-existing application structure - through AJAX calls from a Vue.js frontend.',
+					'Create an app that will allow customers who own businesses to manange the payroll for their employees through their banking account.',
 				technologies: [
 					{
 						title: 'Tools & Technologies',
 						techs: [
-                            'PHP',
-							'Laravel',
-                            'MySQL',
+							'HTML',
+							'CSS',
+							'JavaScript',
+							'jQuery'
 						],
 					},
 				],
@@ -79,22 +80,22 @@ export default {
 					{
 						id: 1,
 						details:
-							"This would be one of the many APIs that I built for First Community Credit Union, and one that I like to feature prominently since it felt very rewarding to build something that would allow students to receive well deserved aid to their collegiate studies.",
+							"Not long after I had wrapped up my development on the financial calculators for First Community Credit Union, they gave me this project that would impact the way their business members would pay their employees, and I felt like my responsibility as a developer was getting greater and greater.",
 					},
 					{
 						id: 2,
 						details:
-							"With this project, I was designated as the sole backend developer that would build endpoints in the Laravel/Lumen framework for the frontend team to call upon for getting and manipulating scholarship data. A frontend was already in place, and an old database structure with old php code querying it was also in place. So the challenge really consisted of taking a pre-existing backend structure, extracting the most necessary parts, adding any new features requested of the new application, and optimizing it with a more modern framework like Laravel.",
+							"Here I was, in charge of the frontend structure of how bank accounts would be accessed and distributed payments, setting up highly secure input validation in JavaScript, making sure members were notified when there were payment updates, account discrepancies, scheduling concerns, etc., and I was building it all in a jQuery single-page-application with an easy to follow step by step process which clearly showed how each employee would be paid through the business they worked for.",
 					},
 					{
 						id: 3,
 						details:
-							"Identifying the needed database fields was simple enough since I was in good communication with the credit union's scholarship committee and their desires for what they needed from a scholarship applicant. Laying out the database table relations was a little more complex since there was a need to incorporate an ability to run jobs that would check for secure file uploads from applicants and change applicant statuses depending on the result of the security check. Relations between student info and scholarship application status needed to be easily understandable and adjustable.",
+							"This was a huge product for the credit union and it would draw in many businesses and give them confidence that they could set up accounts and use this tool instead of their pre-existing ones. It was one of the first projects I felt had a big and positive impact on a large number of people. This product also came with an administration side that I built to help the credit union employees manage the transactions that businesses needed to make for their employees.",
 					},
 					{
 						id: 4,
 						details:
-							"This project gave me a great understanding of how to communicate with another team of developers and document how to use what I was building. It was important that the frontend team knew how to access my API endpoints so that they could easily understand how to develop the new and improved version of the scholarship application process, and this understanding led to a great app that continues to help many students.",
+							"Getting to make a payroll system easy and intuitive to use gave me a great confidence in my coding abilities, and it assured me that I was capable of taking on projects that many people relied on in important ways.",
 					},
 				],
 				socialSharingsHeading: 'Share This',
