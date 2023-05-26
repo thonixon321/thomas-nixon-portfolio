@@ -4,6 +4,7 @@ import Button from './reusable/Button.vue';
 import FormInput from './reusable/FormInput.vue';
 import FormTextarea from './reusable/FormTextarea.vue';
 import axios from 'axios';
+import router from '../router';
 
 export default {
 	props: ['showModal', 'modal', 'categories'],
@@ -15,15 +16,22 @@ export default {
 				email: '',
 				subject: '',
 				message: ''
-			}
+			},
+			formLoad: false
 		}
 	},
 	methods: {
 		submitEmail() {
+			let self = this;
 			console.log(this.form)
+			this.formLoad = true;
 			axios.post('/api/send-mail', this.form)
 			.then(function (response) {
 				console.log(response);
+				self.$emit('closeModal');
+				self.formLoad = false;
+				//redirect to a success page and thank you for contacting me
+				router.push({path: '/email-success'});
 			})
 			.catch(function (error) {
 				console.log(error);
@@ -102,7 +110,7 @@ export default {
 											class="w-full px-5 py-3 border-1 border-gray-200 dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 											id="project"
 											name="project"
-											required=""
+											required
 											aria-label="Project Category"
 											v-model="form.subject"
 										>
@@ -129,6 +137,7 @@ export default {
 											class="mb-4 px-4 sm:px-6 py-2 sm:py-2.5 text-white bg-indigo-500 hover:bg-indigo-600 rounded-md focus:ring-1 focus:ring-indigo-900 duration-500"
 											type="submit"
 											aria-label="Submit Request"
+											:loading="formLoad"
 										/>
 									</div>
 								</form>

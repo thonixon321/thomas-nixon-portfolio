@@ -19,36 +19,6 @@ export default {
 					title: 'Sony',
 					img: '../../assets/images/brands/sony_gray.png',
 				},
-				{
-					id: 3,
-					title: 'Adidas',
-					img: '../../assets/images/brands/adidas_gray.png',
-				},
-				{
-					id: 4,
-					title: 'FILA',
-					img: '../../assets/images/brands/fila_gray.png',
-				},
-				{
-					id: 5,
-					title: 'NB',
-					img: '../../assets/images/brands/nb_gray.png',
-				},
-				{
-					id: 6,
-					title: 'SAMSUNG',
-					img: '../../assets/images/brands/samsung_gray.png',
-				},
-				{
-					id: 7,
-					title: 'CANON',
-					img: '../../assets/images/brands/canon_gray.png',
-				},
-				{
-					id: 7,
-					title: 'PUMA',
-					img: '../../assets/images/brands/puma_gray.png',
-				},
 			],
 		};
 	},

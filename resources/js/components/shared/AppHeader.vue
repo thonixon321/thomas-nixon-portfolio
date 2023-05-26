@@ -159,6 +159,7 @@ export default {
 
 		<!-- Hire me modal -->
 		<HireMeModal
+			@close-modal="showModal"
 			:showModal="showModal"
 			:modal="modal"
 			:categories="categories"

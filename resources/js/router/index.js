@@ -144,6 +144,18 @@ const routes = [
 			title: 'Thomas Nixon - Contact',
 		},
 	},
+	{
+		path: '/email-success',
+		name: 'Email Success',
+		// route level code-splitting
+		// this generates a separate chunk (projects.[hash].js) for this route
+		// which is lazy-loaded when the route is visited.
+		component: () =>
+			import(/* webpackChunkName: "projects" */ '../views/EmailSuccess.vue'),
+		meta: {
+			title: 'Thomas Nixon - Email Success',
+		},
+	},
 ];
 
 const router = createRouter({

@@ -3,6 +3,7 @@ import Button from '../reusable/Button.vue';
 import FormInput from '../reusable/FormInput.vue';
 import FormTextarea from '../reusable/FormTextarea.vue';
 import axios from 'axios';
+import router from '../../router';
 
 export default {
 	data() {
@@ -12,19 +13,25 @@ export default {
 				email: '',
 				subject: '',
 				message: ''
-			}
+			},
+			formLoad: false
 		}
 	},
 	methods: {
 		submitEmail() {
+			let self = this;
 			console.log(this.form)
-		axios.post('/api/send-mail', this.form)
-		.then(function (response) {
-			console.log(response);
-		})
-		.catch(function (error) {
-			console.log(error);
-		});
+			this.formLoad = true;
+			axios.post('/api/send-mail', this.form)
+			.then(function (response) {
+				console.log(response);
+				self.formLoad = false;
+				//redirect to a success page and thank you for contacting me
+				router.push({path: '/email-success'});
+			})
+			.catch(function (error) {
+				console.log(error);
+			});
 		}
 	},
 	components: { Button, FormInput, FormTextarea } 
@@ -59,6 +66,7 @@ export default {
 						class="px-4 py-2.5 text-white tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg duration-500"
 						type="submit"
 						aria-label="Send Message"
+						:loading="formLoad"
 					/>
 				</div>
 			</form>
